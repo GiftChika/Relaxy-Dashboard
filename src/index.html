@@ -7,9 +7,9 @@
     <link rel="shortcut icon" type="image/png" href="/img/databse.png">
     <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="w- " >
-   <div class="container flex flex-row w-full   ">
-    <aside class=" bg-slate-400 px-7 w-[20%] flex flex-col items-start  h-[100vh]">
+<body class="flex flex-row " >
+   <!-- <div class="container flex flex-row w-full   "> -->
+    <aside class=" hidden xl:visible 2xl:visible md:visible lg:visible bg-white px-7 w-[20%] md:flex xl:flex lg:flex flex-col items-start sticky top-0 h-[100vh]">
         <div class="top text-gray-950  text-[20px] font-bold pt-10 tracking-widest">RELAXY</div>
         <div class="sidebar flex flex-col gap-10 pt-[50px]  ">
             <div class=" flex flex-row items-center gap-5">
@@ -48,8 +48,8 @@
         <div class=" pt-9 ">Terms & Services <br>
             Privacy Policy</div>        
     </aside>
-    <div class="right-side-content w-[80%]   flex bg-gray-100 flex-col py-9 ">
-        <div class="top-part flex flex-row justify-between w-full">
+    <div class="right-side-content w-[80%] flex-col px-8 md:flex-col  flex bg-gray-100 xl:flex-col 2xl:flex-col lg:flex-col py-9 ">
+        <div class="top-part hidden xl:visible 2xl:visible lg:visible md:visible md:flex flex-row justify-between w-full">
             <div class="flex flex-col items-center">
                 <div class="text-[20px] ">Total Revenue</div>
                 <div class="text-[30px] font-bold">$45,365.00</div>
@@ -69,22 +69,22 @@
             </div>
             
         </div>
-        <div class="live-updates flex flex-row justify-between text-white pt-9">
-            <div class="flex flex-row bg-gradient-to-r from-cyan-500 to-blue-500 px-12 gap-5 py-4">
+        <div class="live-updates flex flex-col md:flex-col gap-6 xl:flex-row 2xl:flex-row lg:flex-row md:justify-between text-white pt-9">
+            <div class="flex flex-row bg-gradient-to-r from-cyan-500 to-blue-500 md:px-12 xl:px-12 2xl:px-12 lg:px-6 gap-5 py-4">
                 <div class="font-bold">Shipped Orders</div>
                 <div class=" text-[50px]">67</div>
             </div>
-            <div class="flex flex-row bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-12 gap-5 py-4">
+            <div class="flex flex-row bg-gradient-to-r from-indigo-500 via-purple-500  to-pink-500 md:px-12 xl:px-12 2xl:px-12 lg:px-6 gap-5 py-4">
                 <div class="font-bold">Pending Orders</div>
                 <div class=" text-[50px]">09</div>
             </div>
-            <div class="flex flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  px-12 gap-5 py-4">
+            <div class="flex flex-row bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  md:px-12 xl:px-12 2xl:px-12 lg:px-6 gap-5 py-4">
                 <div class="font-bold">New Orders</div>
                 <div class=" text-[50px]">35</div>
             </div>
            
         </div>
-        <div class="recent-updates-analytics flex flex-row justify-between items-center pt-[50px] ">
+        <div class="recent-updates-analytics flex flex-col lg:flex-col md:flex-col xl:flex-row 2xl:flex-row md:justify-between items-center pt-[50px] ">
             <div class="recent-upadates">
                 <div class="heading font-semibold text-[25px]">Recent Updates</div>
                 <div class="content bg-white flex gap-5 flex-col px-8 pt-[20px] rounded-2xl pb-[50px]">
@@ -114,8 +114,8 @@
                     </div>
                 </div>
             </div>
-            <div class="sales-analytic">
-                <div class="heading font-semibold text-[25px]">Sales Analytics</div>
+            <div class="sales-analytics pt-4">
+                <div class="heading font-semibold text-[25px] ">Sales Analytics</div>
                 <div class="content flex flex-col gap-7 bg-white px-8 pt-[20px] rounded-2xl pb-[50px]">
                     <div class="flex flex-row text-[20px] gap-6 items-center">
                         <div class=" bg-red-600 px-5 py-4 rounded-full"><img src="/img/Vector (5).png" alt=""></div>
@@ -153,16 +153,54 @@
                 <div class="heading font-semibold text-[25px]">Recent Activity</div>
                 <div class="text-blue-900 text-[20px] font-bold">View all</div>
             </div>
-            <div class=" flex flex-row justify-between items-center ">
-                <div class="flex flex-row items-center gap-5">
-                    <div><img src="/img/inactive.png" alt=""></div>
-                    <div class="text-[20px] font-bold">Confirm order update</div>
+            <div class="pt-12 flex flex-col gap-5">
+                <div class=" flex flex-row justify-between items-center ">
+                    <div class="flex flex-row items-center gap-5">
+                        <div><img src="/img/inactive.png" alt=""></div>
+                        <div class="text-[20px] font-bold">Confirm order update</div>
+                    </div>
+                    <div class="px-8 py-3 rounded-xl font-bold bg-yellow-600 text-white">URGENT</div>
                 </div>
-                <div class="px-8 py-3 rounded-xl font-bold bg-yellow-600 text-white">URGENT</div>
+                <div class=" flex flex-row justify-between items-center ">
+                    <div class="flex flex-row items-center gap-5">
+                        <div><img src="/img/inactive.png" alt=""></div>
+                        <div class="text-[20px] font-bold">Confirm order update</div>
+                    </div>
+                    <div class="px-8 py-3 rounded-xl font-bold bg-yellow-600 text-white">URGENT</div>
+                </div>
+                <div class=" flex flex-row justify-between items-center ">
+                    <div class="flex flex-row items-center gap-5">
+                        <div><img src="/img/circle.png" alt=""></div>
+                        <div class="text-[20px] font-bold">Finish Shipping Update</div>
+                    </div>
+                    <div class="px-8 py-3 rounded-xl font-bold bg-yellow-600 text-white">URGENT</div>
+                </div>
+                <div class=" flex flex-row justify-between items-center ">
+                    <div class="flex flex-row items-center gap-5">
+                        <div><img src="/img/inactive.png" alt=""></div>
+                        <div class="text-[20px] font-bold">Upadte Payment Report</div>
+                    </div>
+                    <div class="px-8 py-3 rounded-xl font-bold bg-yellow-600 text-white">URGENT</div>
+                </div>
+                <div class=" flex flex-row justify-between items-center ">
+                    <div class="flex flex-row items-center gap-5">
+                        <div><img src="/img/inactive.png" alt=""></div>
+                        <div class="text-[20px] font-bold">Upadte Payment Report</div>
+                    </div>
+                    <div class="px-8 py-3 rounded-xl font-bold bg-yellow-600 text-white">URGENT</div>
+                </div>
+                <div class=" flex flex-row justify-between items-center ">
+                    <div class="flex flex-row items-center gap-5">
+                        <div><img src="/img/inactive.png" alt=""></div>
+                        <div class="text-[20px] font-bold">Upadte Payment Report</div>
+                    </div>
+                    <div class="px-8 py-3 rounded-xl font-bold bg-yellow-600 text-white">URGENT</div>
+                </div>
             </div>
+            
         </div>
     </div>
-   </div> 
+   <!-- </div>  -->
 
 
 
